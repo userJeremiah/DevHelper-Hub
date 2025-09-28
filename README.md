@@ -1,4 +1,3 @@
-
 # DevHelper Hub - KendoReact "Build Without Boundaries" Challenge
 
 Welcome to DevHelper Hub, a smart productivity and knowledge hub for developers. This application is a submission for the KendoReact "Build Without Boundaries" challenge.
@@ -16,76 +15,26 @@ Welcome to DevHelper Hub, a smart productivity and knowledge hub for developers.
 
 ## Getting Started
 
-This project was bootstrapped with Vite. Follow these instructions to get a local copy up and running.
+This project was built with Vite. Follow these instructions to get a local copy up and running.
 
-### 1. Project Setup
+### 1. Clone the Repository
 
-First, create a new React + TypeScript project using Vite:
+First, clone the repository to your local machine from GitHub:
 
 ```bash
-npm create vite@latest devhelper-hub -- --template react-ts
+git clone https://github.com/your-username/devhelper-hub.git
 cd devhelper-hub
 ```
+*(Note: Replace the URL with the actual repository URL after you've uploaded it.)*
 
-Next, replace the contents of the `src` directory with the files provided in this project.
 
 ### 2. Install Dependencies
 
-Install all the required dependencies for the project, including KendoReact components.
+Once you are in the project directory, install all the required dependencies using npm. This single command will read the `package.json` file and install all packages with the correct, compatible versions.
 
 ```bash
-npm install \
-  react-router-dom \
-  @nuclia/core \
-  @progress/kendo-react-buttons \
-  @progress/kendo-react-charts \
-  @progress/kendo-react-data-tools \
-  @progress/kendo-react-dateinputs \
-  @progress/kendo-react-dialogs \
-  @progress/kendo-react-dropdowns \
-  @progress/kendo-react-grid \
-  @progress/kendo-react-inputs \
-  @progress/kendo-react-intl \
-  @progress/kendo-react-layout \
-  @progress/kendo-react-notification \
-  @progress/kendo-react-progressbars \
-  @progress/kendo-react-scheduler \
-  @progress/kendo-react-tooltip \
-  @progress/kendo-react-upload \
-  @progress/kendo-data-query \
-  @progress/kendo-drawing \
-  @progress/kendo-licensing \
-  cldr-data \
-  hammerjs \
-  lucide-react
+npm install
 ```
-
-Install Tailwind CSS dev dependencies:
-```bash
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-```
-Configure `tailwind.config.js`:
-```js
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./{components,pages,App,constants}/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-Create a `./index.css` file and add the Tailwind directives. Then import it in `index.tsx`.
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-*Note: Since the output format does not allow `index.css`, the provided code uses the Tailwind CDN link in `index.html` for simplicity. For a production build, follow the steps above.*
 
 ### 3. Environment Variables (Nuclia API)
 
@@ -117,7 +66,7 @@ The application is structured into pages, each showcasing different KendoReact c
 
 - **Snippet Manager**: Navigate to the "Snippets" section to see the `Grid`, `Dialog`, `MultiSelect`, and `Tooltip`.
 - **Docs & Notes**: Go to "Docs & Notes" for the `Upload` and `Grid` components.
-- **AI Knowledge Search**: The "Knowledge AI" page features `Input`, `Button`, and `Card` components, along with the stubbed Nuclia integration.
+- **AI Knowledge Search**: The "Knowledge AI" page features `Input`, `Button`, and `Card` components, with the Nuclia integration.
 - **Progress Tracker**: The "Progress" page demonstrates the `ProgressBar`, `Chart`, and `Card` components.
 - **Scheduler**: The "Scheduler" page showcases the full `Scheduler` and `Notification` components.
 - **Layout**: The main application layout uses the `Drawer` and `AppBar` for navigation.
