@@ -1,0 +1,5 @@
+{
+  "name": "DevHelper Hub",
+  "description": "A smart productivity and knowledge hub for developers to save snippets, upload documents, query their knowledge base with AI, track learning progress, and schedule coding sessions, built with KendoReact.",
+  "requestFramePermissions": []
+}
